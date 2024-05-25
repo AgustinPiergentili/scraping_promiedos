@@ -60,14 +60,17 @@ class Argentina:
             return self.divs[12].get_text(strip=True)
         
     def imprimir_semis(self):
+        """Metodo para imprimir el resultado de la semi"""
         resultado = self.resultado_semifinal()
         return f"Argentina {resultado} Croacia"
 
     def resultado_final(self):
+        """Metodo para buscar el resultado de la final"""
         if len(self.divs) >= 15:
             return self.divs[14].get_text(strip=True)
         
     def imprimir_final(self):
+        """Metodo para imprimir el resultado de la final"""
         resultado = self.resultado_final()
         if resultado == "34-23":
             return f"Argentina 3 (4) - (2) 3 Francia"
